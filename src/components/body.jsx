@@ -6,28 +6,14 @@ import { AddAction, MinuAction } from "../redux/action";
 
 import "./body.css";
 
-const upperBoxes = {
-  width: "287.61px",
-  height: "336.17px",
-  background: "#C4C4C4",
-  margin: "20px 0 20px 20px",
-  flex: "none",
-  border: "blue 1px"
-};
-
-const btnStyle = {
-  width: "100px",
-  height: "50px",
-  margin: "5px"
-};
 const BodyContainer = ({ count, add, minus }) => {
   return (
     <div>
       <div
         style={{ display: "flex", flexDirection: "row", flexWrap: "nowrap" }}
       >
-        <ShadedBoxes className='shadedBoxes' boxStyles={upperBoxes} />
-        <ShadedBoxes boxStyles={upperBoxes} />
+        <div className='upperBoxes' />
+        <div className='upperBoxes' />
 
         <div
           className='circleBox'
@@ -40,10 +26,11 @@ const BodyContainer = ({ count, add, minus }) => {
           <div className='circle'></div>
         </div>
 
-        <ShadedBoxes boxStyles={upperBoxes} />
-        <ShadedBoxes boxStyles={upperBoxes} />
-        <ShadedBoxes boxStyles={upperBoxes} />
-        <ShadedBoxes boxStyles={upperBoxes} />
+        <div className='upperBoxes' />
+        <div className='upperBoxes' />
+        <div className='upperBoxes' />
+        <div className='upperBoxes' />
+        <div className='upperBoxes' />
       </div>
       <div
         style={{
@@ -53,21 +40,21 @@ const BodyContainer = ({ count, add, minus }) => {
           width: "100%"
         }}
       >
-        <div className='flexible' style={{ flexShrink: "0" }}></div>
+        <div className='flexible' style={{ flexShrink: "0" }} />
         <div
           className='flexible'
           style={{ flexShrink: "0", background: "#9E00FF" }}
-        ></div>
+        />
         <div className='flexible' style={{ flexShrink: "0" }}></div>
         <div
           className='flexible'
           style={{ flexShrink: "0", background: "#00FF66" }}
-        ></div>
-        <div className='flexible' style={{ flexShrink: "0" }}></div>
+        />
+        <div className='flexible' style={{ flexShrink: "0" }} />
         <div
           className='flexible'
           style={{ flexShrink: "0", background: "#BD00FF" }}
-        ></div>
+        />
       </div>
       <div className='detailBox'>
         <div className='detailCont'>
@@ -122,11 +109,7 @@ const BodyContainer = ({ count, add, minus }) => {
               <button className='btnStyle' onClick={() => add()}>
                 Add
               </button>
-              <button
-                className='btnStyle'
-                onClick={() => minus()}
-                style={btnStyle}
-              >
+              <button className='btnStyle' onClick={() => minus()}>
                 Minus
               </button>
             </div>
