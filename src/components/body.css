@@ -1,64 +1,96 @@
 .flexible {
-    flex: 1;
-    flex-basis: 212.74px;
-    background: #C4C4C4;
-    height: 248.67px;
-    margin: 10px
+  flex: 1;
+  flex-basis: 212.74px;
+  background: #c4c4c4;
+  height: 248.67px;
+  margin: 10px;
 }
-.detailBox{
-    background: #7A7A7A;
-    margin: 20px;
-    display: flex; 
-    flex-wrap: nowrap;
-    align-items: center 
-    }
+.detailBox {
+  background: #7a7a7a;
+  margin: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
 .detailCont {
-    display: flex; 
-    margin: 150px;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  margin: 150px;
+  justify-content: center;
+  align-items: center;
 }
 .counterCont {
-    background: #C4C4C4;; 
-    display: flex; 
-    padding: 10px; 
-    align-self: start; 
-    justify-content: center;
+  background: #c4c4c4;
+  display: flex;
+  padding: 10px;
+  align-self: start;
+  justify-content: center;
 }
 
 .displayCount {
-    color: white
+  color: white;
+}
+
+.circle {
+  position: absolute;
+  width: 105.79px;
+  height: 105.79px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1);
+  border: 1px;
+  border-color: black;
+}
+
+.shadedBoxes:hover {
+  border: blue 2px;
+}
+
+.circleBox {
+  width: 287.61px;
+  height: 336.17px;
+  background: #c4c4c4;
+  margin: 20px 0 20px 20px;
+  flex: none;
+}
+
+.circle:hover {
+  border: 2px;
+  border-color: blue;
+  box-shadow: 2px 0px 10px rgb(119, 119, 243);
 }
 
 .btnStyle {
-    width: 100px;
-    height: 50px;
-    margin: 5px
+  width: 100px;
+  height: 50px;
+  margin: 5px;
 }
-    @media (max-width: 767px) {                  
-        .textBlock {
-           display: none;
-        }
-        .detailBox {
-            background: white;
-            justify-content: center;
-            align-items: center;
-        }
-        .detailCont {
-            display: flex; 
-            margin: 0px;
-        }
-        .counterCont {
-            background: white;
-        } 
-        
-        .displayCount {
-            color: black
-        }
+@media (max-width: 767px) {
+  .textBlock {
+    display: none;
+  }
+  .detailBox {
+    background: white;
+    justify-content: center;
+    align-items: center;
+  }
+  .detailCont {
+    display: flex;
+    margin: 0px;
+  }
+  .counterCont {
+    background: white;
+  }
 
-        .btnStyle {
-            background: black;
-            color: white
-        }
-     
+  .displayCount {
+    color: black;
+  }
+
+  .circleBox {
+    display: flex;
+    order: 1;
+  }
+  .btnStyle {
+    background: black;
+    color: white;
+  }
 }
