@@ -1,0 +1,64 @@
+.flexible {
+    flex: 1;
+    flex-basis: 212.74px;
+    background: #C4C4C4;
+    height: 248.67px;
+    margin: 10px
+}
+.detailBox{
+    background: #7A7A7A;
+    margin: 20px;
+    display: flex; 
+    flex-wrap: nowrap;
+    align-items: center 
+    }
+.detailCont {
+    display: flex; 
+    margin: 150px;
+    justify-content: center;
+    align-items: center;
+}
+.counterCont {
+    background: #C4C4C4;; 
+    display: flex; 
+    padding: 10px; 
+    align-self: start; 
+    justify-content: center;
+}
+
+.displayCount {
+    color: white
+}
+
+.btnStyle {
+    width: 100px;
+    height: 50px;
+    margin: 5px
+}
+    @media (max-width: 767px) {                  
+        .textBlock {
+           display: none;
+        }
+        .detailBox {
+            background: white;
+            justify-content: center;
+            align-items: center;
+        }
+        .detailCont {
+            display: flex; 
+            margin: 0px;
+        }
+        .counterCont {
+            background: white;
+        } 
+        
+        .displayCount {
+            color: black
+        }
+
+        .btnStyle {
+            background: black;
+            color: white
+        }
+     
+}
